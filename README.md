@@ -31,7 +31,7 @@ PowershellによるAviUtlの初期環境構築スクリプト
 
 1. アドレスバーに次のコマンドを入力し、実行してください。
     ```bat
-    powershell -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Per-Terra/AviUtl-Installer-pwsh/main/installer.ps1'))"
+    pwsh -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Per-Terra/AviUtl-Installer-pwsh/main/installer.ps1'))"
     ```
     > **Note**
     > エラーが出力された場合は Issue で報告してください。
